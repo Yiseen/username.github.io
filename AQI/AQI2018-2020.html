@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - finalhover强调</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Toggle layers</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Mapbox CSS -->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id='map'></div>
+  <div class="map-overlay" id="legend"></div>
+  <button id="toggleSidebar">show</button>
+  <div id="sidebar">
+    <h2 class="sidebar-title">Countryside List</h2>
+    <ul id="namesList"></ul>
+  </div>
+  <div id='console'>
+    <h1 class="console1">Air Quality Index (AQI)</h1>
+    <p>Data: <a href='https://catalog.data.gov/dataset?q=AQI'>AQI Data </a> in New York State（2018-2022）</p>
+    <div class='session'>
+      <h2 class="console2">Theme</h2>
+      <div class='row' id='theme-controls'>
+        <label><input type="radio" name="theme" value="good" checked> Good</label>
+        <label><input type="radio" name="theme" value="moderate"> Moderate</label>
+        <label><input type="radio" name="theme" value="unhealthy"> Unhealthy</label>
+        <label><input type="radio" name="theme" value="aqi"> AQI</label>
+        <label><input type="radio" name="theme" value="ozone"> Ozone</label>
+        <label><input type="radio" name="theme" value="pm"> PM2.5</label>
+      </div>
+
+    </div>
+    <div class='session' id='sliderbar'>
+      <h2 class="console3">Year: <span id='yearLabel'>2018</span></h2>
+      <input id='yearRange' class='row' type='range' min='2018' max='2022' step='1' value='2018' />
+    </div>
+    <div class='session' id='pd'>
+      <p>No data available for this region.</p>
+    </div>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+
+  </div>
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
